@@ -1,0 +1,24 @@
+---
+title: "Test Quarto"
+format: 
+  html: 
+    embed-resources: true
+  pdf: default
+editor: visual
+---
+
+# Palmer Penguins Test Quarto Analysis
+
+The goal of this file is to get a feel for using quarto documents.
+
+## Data Exploration
+
+First we will have a look at the data in the palmer penguins dataset.
+
+```{r}
+#| warning: false
+library(palmerpenguins)
+head(penguins)
+summary(penguins)
+
+```
