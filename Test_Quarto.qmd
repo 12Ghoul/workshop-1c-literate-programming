@@ -20,5 +20,6 @@ First we will have a look at the data in the palmer penguins dataset.
 library(palmerpenguins)
 head(penguins)
 summary(penguins)
-
+model <- lm(body_mass_g ~ ., data = penguins)
+summary(model)
 ```
